@@ -1,36 +1,24 @@
-public class TestAcc {
+public class TestTools {
     public static void main(String[] args) {
-        Account a1 = new Account(100);
-        Account a2 = new Account();
 
-        a1.display();
-        a2.display();
+        int r = Tool.sub(7,2);
 
-        a2.setBalance(2000);
+        System.out.println("r = " + r);
 
-        a1.display();
-        a2.display();
+        int a = Tool.add(r, 4);
 
-        a1.deposit(500);
+        System.out.println("a = " + a);
 
-        a1.display();
-        a2.display();
+        int b = Tool.max(3,8);
 
-        a2.withdraw(200);
+        System.out.println("b = " + b);
 
-        a1.display();
-        a2.display();
+        int c = Tool.max(a,r);
 
-        Account.setCount(20);
+        System.out.println("c = " + c);
 
-        Account a3 = new Account();
-        Account a4 = new Account(700);
+        int d = Tool.min(7, Tool.mul(4,2), Tool.sub(9, 4));
 
-        a1.display();
-        a2.display();
-        a3.display();
-        a4.display();
-
+        System.out.println("d = " + d);
     }
-
 }
